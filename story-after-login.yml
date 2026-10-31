@@ -1,0 +1,58 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - banner:
+        - generic:
+          - generic: Concept prototype. Synthetic data.
+          - generic "Priya Raman, Clinical quality nurse (RN)"
+        - navigation:
+          - link "Story":
+            - /url: "#/"
+          - link "Chart review":
+            - /url: "#/review"
+          - link "Chart":
+            - /url: "#/chart"
+          - link "Flagged charts":
+            - /url: "#/flags"
+          - link "Sign-off":
+            - /url: "#/sign-off"
+          - link "How this works":
+            - /url: "#/architecture"
+      - main:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - paragraph [ref=e11]: Family medicine group, adult and pediatric primary care
+            - heading "Northfield Family Medicine" [level=1] [ref=e12]
+            - paragraph [ref=e13]: "Priya starts at 7:00am with yesterday's 104 closed visits. She has time to open about 35 of them, picked at random, and checks each for an unsigned note, a diagnosis that the note doesn't support, missing vitals, and a medication list that doesn't match what the provider wrote. Each chart takes 3-4 minutes. By 9:15am she has found 3 problems, emailed 3 providers, and written each one into a shared spreadsheet. The other 69 charts go to billing unreviewed, and chart #5182 is one of them."
+          - generic [ref=e14]:
+            - heading "What slows Priya Raman down" [level=2] [ref=e15]
+            - list [ref=e16]:
+              - listitem [ref=e17]: Only about a third of charts get reviewed each day; the rest go to billing unchecked
+              - listitem [ref=e18]: Medication list conflicts reach the pharmacy before anyone notices them
+              - listitem [ref=e19]: Corrections are tracked in a spreadsheet and by email, so nobody can see what's overdue
+              - listitem [ref=e20]: Nobody records which flag reasons keep coming back, so the same documentation gaps repeat every week
+            - paragraph [ref=e21]: Priya spends about 11 hours per week on manual sampling and still misses about 65% of charts. The billing team estimates $8,500 per month in claims returned or downcoded because of documentation gaps found after submission.
+          - generic [ref=e22]:
+            - generic [ref=e23]:
+              - heading "Before" [level=3] [ref=e24]
+              - paragraph [ref=e25]: "7:00am: Priya opens the EMR and her spreadsheet and starts pulling 35 random charts from yesterday's 104 visits. By 9:15am she has found 3 unsigned notes and emailed the providers. Chart #5182 (T. Nguyen, hypertension follow-up with Dr. Elena Brooks) isn't in her sample. The note says lisinopril was stopped because of a dry cough and losartan was started, but the active medication list still shows lisinopril 20 mg, and a 90-day refill is queued to go to the pharmacy tomorrow. The claim goes out with a chart that contradicts itself."
+            - generic [ref=e26]:
+              - heading "After" [level=3] [ref=e27]
+              - paragraph [ref=e28]: "7:00am: Priya opens the chart review screen. All 104 of yesterday's charts already have a first-pass review, and 9 are flagged. Chart #5182 is at the top of Flagged charts: 'medication list conflicts with note', 2 business days left before the correction deadline, with the queued refill named. Priya attaches Dr. Brooks's addendum confirming the switch, moves the chart to correction sign-off, checks the proposed medication list change, and approves it herself, which removes the queued refill and releases the chart to billing. Nothing changed without her click. She's on the next flag by 7:20am."
+          - button "Start the tour" [ref=e29] [cursor=pointer]
+        - button "Replay tour"
+      - contentinfo:
+        - text: Built by
+        - link "Umakes.cloud":
+          - /url: https://umakes.cloud
+        - link "umakescloud@gmail.com":
+          - /url: mailto:umakescloud@gmail.com
+  - dialog [ref=e30]:
+    - button "Close" [active] [ref=e31] [cursor=pointer]: ×
+    - banner [ref=e32]: Meet Priya
+    - generic [ref=e33]: Priya reviews charts for an 8-provider family medicine group. Here is her morning before and after this tool.
+    - contentinfo [ref=e34]:
+      - generic [ref=e35]: 1 of 8
+      - generic [ref=e36]:
+        - button "Previous" [disabled]
+        - button "Next" [ref=e37] [cursor=pointer]

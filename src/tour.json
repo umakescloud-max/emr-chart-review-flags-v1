@@ -1,0 +1,66 @@
+[
+  {
+    "id": "meet-priya",
+    "screen_id": "story",
+    "route": "/",
+    "target": "story-panel",
+    "title": "Meet Priya",
+    "body": "Priya reviews charts for an 8-provider family medicine group. Here is her morning before and after this tool."
+  },
+  {
+    "id": "every-chart-reviewed",
+    "screen_id": "tracker",
+    "route": "/review",
+    "target": "tracker-table",
+    "title": "Every chart, not a sample",
+    "body": "Every visit from the last three business days has a first-pass review. Priya no longer picks a third of them at random."
+  },
+  {
+    "id": "chart-history",
+    "screen_id": "case",
+    "route": "/chart",
+    "target": "case-timeline",
+    "title": "One history per chart",
+    "body": "The review findings, provider messages, and every status change for a chart, in order."
+  },
+  {
+    "id": "flag-caught",
+    "screen_id": "denials",
+    "route": "/flags",
+    "target": "denial-row-5182",
+    "title": "A conflict, caught the next morning",
+    "body": "The note says lisinopril was stopped, but the medication list still shows it with a refill queued. This chart was flagged before the refill went out."
+  },
+  {
+    "id": "deadline-visible",
+    "screen_id": "denials",
+    "route": "/flags",
+    "target": "correction-countdown",
+    "title": "The deadline is on screen",
+    "body": "A live countdown to the correction deadline, so no one has to track it in a spreadsheet."
+  },
+  {
+    "id": "human-review",
+    "screen_id": "appeals",
+    "route": "/sign-off",
+    "target": "approval-queue-item",
+    "title": "Priya still decides",
+    "body": "The medication list isn't changed and the chart doesn't go to billing until Priya reviews the fix and approves it herself."
+  },
+  {
+    "id": "metrics-overview",
+    "screen_id": "tracker",
+    "route": "/review",
+    "target": "metric-panel",
+    "title": "The numbers that matter",
+    "body": "Charts reviewed, flag rate, overdue flags, and time to resolve, all worked out from the chart data on this screen."
+  },
+  {
+    "id": "how-it-works",
+    "screen_id": "architecture",
+    "route": "/architecture",
+    "target": "architecture-diagram",
+    "title": "How this would be built",
+    "body": "A nightly job reads closed encounters from the existing EMR, sends minimum-necessary note text to Claude under a BAA for review, and writes flags to this app. Chart changes go back to the EMR only after staff approval."
+  }
+]
